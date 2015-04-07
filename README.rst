@@ -67,7 +67,7 @@ Use:
   def interval_process(reason=None):
     # ...gets executed every 10 minutes with an optional reason...
   def handle_request_often(request):
-    request.registry.scheduler.add_date_job(interval_process, minutes=10)
+    request.registry.scheduler.add_interval_job(interval_process, minutes=10)
 
 
 Concepts
